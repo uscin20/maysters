@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>265 Wikingowie - kalendarz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1080px)" href="tel.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/89399022-e7ab-4af6-a1e3-15f5ee8e95d1/favicon.png?v=1733996956335" style="float:left;">
+  </head>
+  <body>
+    <button id="roundButton" class="fix"><strong>MENU</strong></button><br>
+    <div id="flyoutMenu">
+    <h2><a href="https://265wikingowie.glitch.me">Strona główna</a></h2>
+    <h2><a href="kadra.html">Nasza Kadra</a></h2>
+    <h2><a href="info.html">O Gromadzie</a></h2>
+    <h2><a href="https://www.facebook.com/wikingowie265/?locale=pl_PL">Facebook</a></h2>
+    <h2><a href="https://www.facebook.com/265daraba?locale=pl_PL">Facebook Szczepu</a></h2>
+    <h2><a href="kalendarz.html">Kalendarz</a></h2>
+    <h2><a href="kontakt.html">Kontakt</a></h2>
+</div>
+    <script>
+        var roundButton = document.querySelector("#roundButton");
+        roundButton.addEventListener("click", showMenu, false);
+
+        var flyoutMenu = document.querySelector("#flyoutMenu");
+        flyoutMenu.addEventListener("click", hideMenu, false);
+
+        function showMenu(e) {
+            flyoutMenu.classList.add("show");
+
+            document.body.style.overflow = "hidden";
+        }
+
+        function hideMenu(e) {
+            flyoutMenu.classList.remove("show");
+            e.stopPropagation();
+
+            document.body.style.overflow = "auto";
+        }
+    </script>
+    
+    <hr>
+<p id="dol">site by <a style="color:rgb(100, 100, 100);" href="https://github.com/uscin20">Wiktor Uścinowicz</a></p>
+  </body>
+</html>
