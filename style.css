@@ -1,0 +1,58 @@
+body {
+  margin: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+}
+#dol {
+  font-size: 12px;
+  bottom: 10;
+  left: 10;
+  color: rgb(100, 100, 100);
+}
+#glowna {
+  font-size: 40px;
+  font-family: darabka;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0px;
+}
+
+.button {
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  border-radius: 20px;
+  background-color: #800000;
+  font-family: darabka;
+  font-weight: bold;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+td {
+  border: 1px solid white;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+.fixed {
+  position: fixed; /* Ustala pozycję tekstu jako stałą */
+  top: 0; /* Przykleja tekst do górnej krawędzi */
+  left: 0;
+  width: 100%; /* Ustawia szerokość na całą szerokość strony */
+  color: black; /* Kolor tekstu */
+  font-size: 30px; /* Rozmiar czcionki */
+  padding: 10px 0; /* Odstępy wokół tekstu */
+  z-index: 1000; /* Zwiększa priorytet, aby tekst nie był przykryty innymi elementami */
+}
+.fix {
+  position: fixed; /* Ustala pozycję tekstu jako stałą */
+  top: 10px; /* Przykleja tekst do górnej krawędzi */
+  left: 10px;
